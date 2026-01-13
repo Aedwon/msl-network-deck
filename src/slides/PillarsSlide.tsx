@@ -123,7 +123,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                     key={pillar.id}
                                     onClick={() => setActivePillar(pillar.id)}
                                     className={`group relative cursor-pointer bg-msl-card rounded-xl p-4 transition-all duration-200 overflow-hidden border-2 ${isSelected
-                                        ? `${pillar.activeBorder} ${pillar.bg}`
+                                        ? `${pillar.activeBorder}`
                                         : 'border-transparent hover:border-white/10'
                                         } ${isActive ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}
                                     style={{ transitionDelay: `${100 + index * 50}ms` }}
@@ -171,7 +171,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 key={`${activePillar}-0`}
                                 src={currentPhotos[0]}
                                 alt="Partner activity"
-                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 animate-[fadeIn_0.4s_ease-out_forwards]"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                         </div>
@@ -182,7 +182,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 key={`${activePillar}-1`}
                                 src={currentPhotos[1]}
                                 alt="Partner activity"
-                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 animate-[fadeIn_0.4s_ease-out_forwards]"
                             />
                         </div>
 
@@ -192,7 +192,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 key={`${activePillar}-2`}
                                 src={currentPhotos[2]}
                                 alt="Partner activity"
-                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 animate-[fadeIn_0.4s_ease-out_forwards]"
                             />
                         </div>
                         <div className="relative overflow-hidden rounded-xl group">
@@ -200,7 +200,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 key={`${activePillar}-3`}
                                 src={currentPhotos[3]}
                                 alt="Partner activity"
-                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 animate-[fadeIn_0.4s_ease-out_forwards]"
                             />
                         </div>
                         <div className="relative overflow-hidden rounded-xl group">
@@ -208,7 +208,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 key={`${activePillar}-4`}
                                 src={currentPhotos[4]}
                                 alt="Partner activity"
-                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 animate-[fadeIn_0.4s_ease-out_forwards]"
                             />
                         </div>
                     </div>

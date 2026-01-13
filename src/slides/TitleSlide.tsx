@@ -71,10 +71,10 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
 
                 {/* Main Title Block */}
                 <div className={`mt-10 mb-10 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.95] tracking-tight">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tight">
                         Behind Every
                     </h1>
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-black gradient-text-gold leading-[1] tracking-tight mt-2 drop-shadow-[0_0_60px_rgba(242,194,26,0.4)]">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black gradient-text-gold leading-[1] tracking-tight mt-2 drop-shadow-[0_0_60px_rgba(242,194,26,0.4)]">
                         Victory
                     </h1>
                 </div>

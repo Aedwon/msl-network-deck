@@ -70,7 +70,7 @@ const BuffsSlide: React.FC<SlideProps> = ({ isActive }) => {
                                         Limit
                                     </div>
                                     <div className="bg-white/5 rounded p-2 border border-white/5">
-                                        <span className="block text-white text-lg mb-1">0s</span>
+                                        <span className="block text-white text-lg mb-1 normal-case">0s</span>
                                         CD
                                     </div>
                                 </div>
@@ -99,8 +99,8 @@ const BuffsSlide: React.FC<SlideProps> = ({ isActive }) => {
 
                         {/* Buffs Grid */}
                         <div className={`grid grid-cols-2 gap-4 transition-all duration-700 delay-300 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            <div className="bg-msl-card border border-white/5 rounded-xl p-5 group hover:border-msl-gold/30 transition-all">
-                                <Gem size={24} className="text-msl-gold mb-3" />
+                            <div className="bg-msl-card border border-white/5 rounded-xl p-5 group hover:border-blue-400/30 transition-all">
+                                <Gem size={24} className="text-blue-400 mb-3" />
                                 <div className="text-2xl font-black text-white mb-1">150,000</div>
                                 <div className="text-xs text-gray-500 uppercase">Diamonds / Sem</div>
                             </div>

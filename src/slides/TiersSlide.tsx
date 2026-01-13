@@ -66,7 +66,7 @@ const TIERS = [
 ];
 
 const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
-    const [activeTier, setActiveTier] = useState(TIERS[3]); // Default to SS
+    const [activeTier, setActiveTier] = useState(TIERS[0]); // Default to Tier C
 
     // Helper for progressive background effects
     const getBackgroundFX = () => {

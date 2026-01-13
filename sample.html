@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSL Partnership Email</title>
+</head>
+<body>
+  <h2>Send Partnership Intent Email</h2>
+  <label for="region">Select your region:</label>
+  <select id="region">
+    <option value="">-- Select your region --</option>
+    <option value="msl.partnerships.ncluz@gmail.com">North/Central Luzon</option>
+    <option value="msl.partnerships.ncr@gmail.com">National Capital Region</option>
+    <option value="msl.partnerships.sluz@gmail.com">South Luzon</option>
+    <option value="msl.partnerships.vis@gmail.com">Visayas</option>
+    <option value="msl.partnerships.min@gmail.com">Mindanao</option>
+  </select>
+
+  <button onclick="sendEmail()">Compose Email</button>
+
+  <script>
+    function sendEmail() {
+      const regionEmail = document.getElementById("region").value;
+      
+      if (!regionEmail) {
+        alert("Please select your region first.");
+        return;
+      }
+
+      const to = "msl.partnerships.ph@gmail.com";
+      const cc = `msl.network.ph@gmail.com,${regionEmail}`;
+      const subject = "Intent to Partner with MSL Philippines";
+      const body = "Please introduce yourself, which org you're from, and what school you're based in, and then your partnership intent...";
+
+      const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&cc=${encodeURIComponent(cc)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

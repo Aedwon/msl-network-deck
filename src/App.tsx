@@ -12,6 +12,7 @@ import IndustryAccessSlide from './slides/IndustryAccessSlide';
 import TiersSlide from './slides/TiersSlide';
 import CompetitionsSlide from './slides/CompetitionsSlide';
 import SuccessStoriesSlide from './slides/SuccessStoriesSlide';
+import ProcessSlide from './slides/ProcessSlide';
 import CTASlide from './slides/CTASlide';
 
 const SLIDES = [
@@ -25,6 +26,7 @@ const SLIDES = [
     { id: 'tiers', component: TiersSlide, label: 'Tiers' },
     { id: 'competitions', component: CompetitionsSlide, label: 'Compete' },
     { id: 'success', component: SuccessStoriesSlide, label: 'Success' },
+    { id: 'process', component: ProcessSlide, label: 'Process' },
     { id: 'cta', component: CTASlide, label: 'Join Us' },
 ];
 

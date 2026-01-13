@@ -58,7 +58,7 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
                 {/* MSL Logo - Hero size */}
                 <div className={`mb-12 transition-all duration-700 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                     <img
-                        src="/logos/msl logo compressed.png"
+                        src="/logos/msl-logo-compressed.png"
                         alt="MSL Philippines"
                         className="h-24 md:h-28 mx-auto drop-shadow-[0_0_40px_rgba(242,194,26,0.5)]"
                     />

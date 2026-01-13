@@ -58,7 +58,7 @@ const NetworkIntroSlide: React.FC<SlideProps> = ({ isActive }) => {
 
                         {/* Description */}
                         <p className={`text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            The centralized ecosystem for collegiate esports in the Philippines, designed to <span className="text-white font-semibold">Empower</span>, <span className="text-white font-semibold">Sustain</span>, <span className="text-white font-semibold">Professionalize</span> student organizations.
+                            The centralized ecosystem for collegiate esports in the Philippines, designed to <span className="text-white font-semibold">Empower</span>, <span className="text-white font-semibold">Sustain</span>, and <span className="text-white font-semibold">Professionalize</span> student organizations.
                         </p>
 
                         {/* Stats */}

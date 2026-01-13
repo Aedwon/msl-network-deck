@@ -47,7 +47,7 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
                         </div>
                         <div>
                             <div className="text-sm font-bold text-white">Diamond Treasury</div>
-                            <div className="text-[10px] text-gray-400">₱7.9M+ Investment</div>
+                            <div className="text-[10px] text-gray-400">₱9.1M+ Investment</div>
                         </div>
                     </div>
                 </>
@@ -55,50 +55,50 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
 
             {/* Central Content */}
             <div className="relative z-10 text-center max-w-4xl px-6">
-                {/* MSL Logo */}
-                <div className={`mb-8 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                {/* MSL Logo - Hero size */}
+                <div className={`mb-12 transition-all duration-700 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                     <img
                         src="/logos/msl logo compressed.png"
                         alt="MSL Philippines"
-                        className="h-20 mx-auto drop-shadow-[0_0_30px_rgba(242,194,26,0.4)]"
+                        className="h-24 md:h-28 mx-auto drop-shadow-[0_0_40px_rgba(242,194,26,0.5)]"
                     />
                 </div>
 
                 {/* Badge */}
-                <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold text-msl-gold text-sm font-bold uppercase mb-8 transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <Network size={14} fill="currentColor" /> The MSL Network
+                <div className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass-gold text-msl-gold text-sm font-bold uppercase tracking-wider transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <Network size={16} fill="currentColor" /> The MSL Network
                 </div>
 
-                {/* Main Title */}
-                <h1 className={`text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] mb-6 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    Level Up Your
-                    <br />
-                    <span className="gradient-text-gold text-glow-gold">Organization</span>
-                </h1>
+                {/* Main Title Block */}
+                <div className={`mt-10 mb-10 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.95] tracking-tight">
+                        Behind Every
+                    </h1>
+                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-black gradient-text-gold leading-[1] tracking-tight mt-2 drop-shadow-[0_0_60px_rgba(242,194,26,0.4)]">
+                        Victory
+                    </h1>
+                </div>
 
-                {/* Subtitle */}
-                <p className={`text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-300 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                {/* Decorative Divider */}
+                <div className={`flex items-center justify-center gap-4 mb-8 transition-all duration-700 delay-300 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className="w-16 h-px bg-gradient-to-r from-transparent to-msl-gold/50" />
+                    <div className="w-2 h-2 rounded-full bg-msl-gold/60" />
+                    <div className="w-16 h-px bg-gradient-to-l from-transparent to-msl-gold/50" />
+                </div>
+
+                {/* Tagline */}
+                <p className={`text-xl md:text-2xl lg:text-3xl text-gray-300 font-light tracking-wide transition-all duration-700 delay-400 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     Fueling Your Next Win.
                 </p>
 
-                {/* Press to Continue Hint */}
-                <div className={`mt-12 text-gray-600 text-sm uppercase tracking-widest transition-all duration-700 delay-500 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
-                    <span className="inline-flex items-center gap-2">
-                        <span className="w-6 h-6 border border-gray-700 rounded flex items-center justify-center text-[10px]">→</span>
-                        Press to continue
-                    </span>
-                </div>
-
-                {/* Official Partner Logos */}
-                <div className={`mt-12 transition-all duration-700 delay-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <p className="text-[10px] text-gray-600 uppercase tracking-[0.2em] mb-4">The Official Collegiate Arm of</p>
-                    <div className="flex items-center justify-center">
-                        <img
-                            src="/logos/mlbb-logo.png"
-                            alt="Mobile Legends: Bang Bang"
-                            className="h-24 opacity-70 hover:opacity-100 transition-opacity"
-                        />
-                    </div>
+                {/* Official Partner Section - Bottom anchored */}
+                <div className={`mt-16 transition-all duration-700 delay-600 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <p className="text-[10px] text-gray-600 uppercase tracking-[0.25em] mb-3">The Official Collegiate Arm of</p>
+                    <img
+                        src="/logos/mlbb-logo.png"
+                        alt="Mobile Legends: Bang Bang"
+                        className="h-16 mx-auto opacity-60 hover:opacity-100 transition-opacity"
+                    />
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wallet, Shield, Tv, Users, AlertTriangle } from 'lucide-react';
+import { Wallet, Shield, TrendingDown, Users, AlertTriangle } from 'lucide-react';
 
 interface SlideProps {
     isActive: boolean;
@@ -8,29 +8,29 @@ interface SlideProps {
 const PAIN_POINTS = [
     {
         icon: Wallet,
-        title: 'Limited Budget & Resources',
-        desc: 'Scraping together funds for every event',
+        title: 'Tight Budgets',
+        desc: 'Every event is a financial puzzle.',
         color: 'text-red-400',
         bg: 'bg-red-500/10',
     },
     {
         icon: Shield,
-        title: 'Lack of Official Recognition',
-        desc: 'Struggling to get school accreditation',
+        title: 'No Recognition',
+        desc: 'Hard to get school buy-in.',
         color: 'text-orange-400',
         bg: 'bg-orange-500/10',
     },
     {
-        icon: Tv,
-        title: 'Low Production Value',
-        desc: 'Basic setups, no broadcast quality',
+        icon: TrendingDown,
+        title: 'Unclear Direction',
+        desc: 'No roadmap for growth.',
         color: 'text-yellow-400',
         bg: 'bg-yellow-500/10',
     },
     {
         icon: Users,
-        title: 'No Industry Connections',
-        desc: 'Isolated from the professional scene',
+        title: 'Isolated',
+        desc: 'Disconnected from the industry.',
         color: 'text-purple-400',
         bg: 'bg-purple-500/10',
     },
@@ -53,14 +53,11 @@ const ProblemSlide: React.FC<SlideProps> = ({ isActive }) => {
                         <AlertTriangle size={14} /> Reality Check
                     </div>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
-                        The Reality of
-                        <br />
-                        <span className="text-red-400">Campus Esports</span>
+                        Sound
+                        <span className="text-red-400"> Familiar?</span>
                     </h2>
                     <p className="text-xl text-gray-400 max-w-xl mx-auto">
-                        You have the passion, but you lack the
-                        <span className="text-white font-bold"> "Buffs" </span>
-                        to scale.
+                        You've got the drive. You just need the right support.
                     </p>
                 </div>
 
@@ -69,7 +66,7 @@ const ProblemSlide: React.FC<SlideProps> = ({ isActive }) => {
                     {PAIN_POINTS.map((point, index) => (
                         <div
                             key={point.title}
-                            className={`group bg-msl-card border border-white/5 rounded-2xl p-6 hover:border-white/20 transition-all duration-500 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                            className={`group bg-msl-card border border-white/5 rounded-2xl p-6 hover:border-white/20 transition-all duration-500 flex flex-col ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                                 }`}
                             style={{ transitionDelay: `${200 + index * 100}ms` }}
                         >
@@ -80,10 +77,10 @@ const ProblemSlide: React.FC<SlideProps> = ({ isActive }) => {
 
                             {/* Content */}
                             <h3 className="text-lg font-bold text-white mb-2">{point.title}</h3>
-                            <p className="text-sm text-gray-500">{point.desc}</p>
+                            <p className="text-sm text-gray-500 min-h-[40px]">{point.desc}</p>
 
-                            {/* Severity Indicator */}
-                            <div className="mt-4 flex gap-1">
+                            {/* Severity Indicator - pushed to bottom */}
+                            <div className="mt-auto pt-4 flex gap-1">
                                 {[1, 2, 3].map((i) => (
                                     <div
                                         key={i}

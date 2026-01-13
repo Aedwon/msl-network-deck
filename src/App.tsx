@@ -10,7 +10,7 @@ import BuffsSlide from './slides/BuffsSlide';
 import TournamentLobbySlide from './slides/TournamentLobbySlide';
 import IndustryAccessSlide from './slides/IndustryAccessSlide';
 import TiersSlide from './slides/TiersSlide';
-import CalculatorSlide from './slides/CalculatorSlide';
+import CompetitionsSlide from './slides/CompetitionsSlide';
 import SuccessStoriesSlide from './slides/SuccessStoriesSlide';
 import CTASlide from './slides/CTASlide';
 
@@ -23,7 +23,7 @@ const SLIDES = [
     { id: 'tournament-lobby', component: TournamentLobbySlide, label: 'Pro Tools' },
     { id: 'industry-access', component: IndustryAccessSlide, label: 'Industry' },
     { id: 'tiers', component: TiersSlide, label: 'Tiers' },
-    { id: 'calculator', component: CalculatorSlide, label: 'Calculator' },
+    { id: 'competitions', component: CompetitionsSlide, label: 'Compete' },
     { id: 'success', component: SuccessStoriesSlide, label: 'Success' },
     { id: 'cta', component: CTASlide, label: 'Join Us' },
 ];

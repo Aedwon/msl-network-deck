@@ -19,7 +19,7 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
             {isActive && (
                 <>
                     {/* Node 1 */}
-                    <div className="absolute top-[15%] left-[10%] p-4 glass rounded-2xl flex items-center gap-3 shadow-xl animate-float opacity-0 animate-fade-in stagger-2">
+                    <div className="absolute top-[15%] left-[2%] md:left-[10%] p-3 md:p-4 glass rounded-2xl flex items-center gap-2 md:gap-3 shadow-xl animate-float opacity-0 animate-fade-in stagger-2 scale-75 md:scale-100 hidden md:flex">
                         <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400">
                             <Building2 size={20} />
                         </div>
@@ -30,7 +30,7 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
 
                     {/* Node 2 */}
-                    <div className="absolute top-[25%] right-[8%] p-4 glass rounded-2xl flex items-center gap-3 shadow-xl animate-float-delayed opacity-0 animate-fade-in stagger-3">
+                    <div className="absolute top-[25%] right-[2%] md:right-[8%] p-3 md:p-4 glass rounded-2xl flex items-center gap-2 md:gap-3 shadow-xl animate-float-delayed opacity-0 animate-fade-in stagger-3 scale-75 md:scale-100 hidden md:flex">
                         <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400">
                             <Star size={20} />
                         </div>
@@ -41,7 +41,7 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
 
                     {/* Node 3 */}
-                    <div className="absolute bottom-[25%] left-[12%] p-4 glass rounded-2xl flex items-center gap-3 shadow-xl animate-float opacity-0 animate-fade-in stagger-4" style={{ animationDelay: '0.5s' }}>
+                    <div className="absolute bottom-[20%] left-[5%] md:left-[12%] p-3 md:p-4 glass rounded-2xl flex items-center gap-2 md:gap-3 shadow-xl animate-float opacity-0 animate-fade-in stagger-4 scale-75 md:scale-100 hidden md:flex" style={{ animationDelay: '0.5s' }}>
                         <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center text-green-400">
                             <Zap size={20} />
                         </div>
@@ -54,13 +54,13 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
             )}
 
             {/* Central Content */}
-            <div className="relative z-10 text-center max-w-4xl px-6">
+            <div className="relative z-10 text-center max-w-4xl px-6 pb-24 md:pb-0 pt-12 md:pt-0">
                 {/* MSL Logo - Hero size */}
-                <div className={`mb-12 transition-all duration-700 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                <div className={`mb-8 md:mb-12 transition-all duration-700 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                     <img
                         src="/logos/msl-logo-compressed.png"
                         alt="MSL Philippines"
-                        className="h-24 md:h-28 mx-auto drop-shadow-[0_0_40px_rgba(242,194,26,0.5)]"
+                        className="h-20 md:h-28 mx-auto drop-shadow-[0_0_40px_rgba(242,194,26,0.5)]"
                     />
                 </div>
 
@@ -70,11 +70,11 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
 
                 {/* Main Title Block */}
-                <div className={`mt-10 mb-10 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tight">
+                <div className={`mt-6 md:mt-10 mb-6 md:mb-10 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tight">
                         Behind Every
                     </h1>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black gradient-text-gold leading-[1] tracking-tight mt-2 drop-shadow-[0_0_60px_rgba(242,194,26,0.4)]">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black gradient-text-gold leading-[1] tracking-tight mt-2 drop-shadow-[0_0_60px_rgba(242,194,26,0.4)]">
                         Victory
                     </h1>
                 </div>
@@ -87,12 +87,12 @@ const TitleSlide: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
 
                 {/* Tagline */}
-                <p className={`text-xl md:text-2xl lg:text-3xl text-gray-300 font-light tracking-wide transition-all duration-700 delay-400 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                <p className={`text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 font-light tracking-wide transition-all duration-700 delay-400 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     Fueling Your Next Win.
                 </p>
 
                 {/* Official Partner Section - Bottom anchored */}
-                <div className={`mt-16 transition-all duration-700 delay-600 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                <div className={`mt-10 md:mt-16 transition-all duration-700 delay-600 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <p className="text-[10px] text-gray-600 uppercase tracking-[0.25em] mb-3">The Official Collegiate Arm of</p>
                     <img
                         src="/logos/mlbb-logo.png"

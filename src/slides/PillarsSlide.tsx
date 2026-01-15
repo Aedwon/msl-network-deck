@@ -101,7 +101,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob ambient-blob-blue w-[400px] h-[400px] bottom-[20%] left-[10%]" />
 
             {/* Main Grid - 50/50 */}
-            <div className="relative z-10 w-full h-full grid grid-cols-2 gap-8 p-8">
+            <div className="relative z-10 w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 md:p-8 pt-20 md:pt-8">
                 {/* Left Panel - Cards */}
                 <div className="flex flex-col justify-center max-w-lg w-full mx-auto">
                     {/* Header */}
@@ -109,7 +109,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-gray-300 text-sm font-bold uppercase mb-3">
                             <Sparkles size={14} /> Full Stack Support
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
                             The MSL <span className="gradient-text-gold">Advantage</span>
                         </h2>
                     </div>
@@ -163,7 +163,7 @@ const PillarsSlide: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
 
                 {/* Right Panel - Photo Gallery */}
-                <div className={`flex items-center transition-all duration-700 delay-200 ${isActive ? 'opacity-100 -translate-x-20' : 'opacity-0 translate-x-20'}`}>
+                <div className={`hidden lg:flex items-center transition-all duration-700 delay-200 ${isActive ? 'opacity-100 -translate-x-20' : 'opacity-0 translate-x-20'}`}>
                     <div className="w-full h-[500px] grid grid-cols-3 grid-rows-2 gap-3">
                         {/* Large featured image */}
                         <div className="col-span-2 row-span-1 relative overflow-hidden rounded-xl group">

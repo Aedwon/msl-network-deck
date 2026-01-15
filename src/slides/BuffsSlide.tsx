@@ -12,11 +12,11 @@ const BuffsSlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob ambient-blob-gold w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
             <div className="absolute inset-0 bg-grid-pattern opacity-20" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full pt-10 md:pt-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Left - Mythic Card */}
-                    <div className={`relative transition-all duration-1000 ${isActive ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="relative w-full max-w-sm mx-auto">
+                    <div className={`relative transition-all duration-1000 order-2 lg:order-1 ${isActive ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="relative w-full max-w-xs md:max-w-sm mx-auto scale-90 md:scale-100">
                             {/* Glow */}
                             <div className="absolute inset-0 bg-msl-gold/20 blur-[80px] rounded-full animate-pulse" />
 
@@ -79,21 +79,21 @@ const BuffsSlide: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
 
                     {/* Right - Content */}
-                    <div>
+                    <div className="order-1 lg:order-2">
                         {/* Badge */}
                         <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold text-msl-gold text-sm font-bold uppercase mb-6 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <Zap size={14} fill="currentColor" /> Resource Support
                         </div>
 
                         {/* Title */}
-                        <h2 className={`text-4xl md:text-5xl font-black text-white mb-6 leading-tight transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                        <h2 className={`text-3xl md:text-5xl font-black text-white mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             Unlock Your
                             <br />
                             <span className="gradient-text-gold">Admin's Blessing</span>
                         </h2>
 
                         {/* Description */}
-                        <p className={`text-xl text-gray-400 mb-8 leading-relaxed transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                        <p className={`text-lg md:text-xl text-gray-400 mb-6 md:mb-8 leading-relaxed transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             Stop worrying about prize pools. We equip you with the resources to run legendary events.
                         </p>
 

@@ -15,13 +15,13 @@ const CompetitionsSlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob w-[400px] h-[400px] top-1/2 right-1/4 -translate-y-1/2 opacity-20" style={{ background: 'radial-gradient(circle, rgba(251, 191, 36, 0.1), transparent 70%)' }} />
             <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full pb-32 md:pb-0">
                 {/* Header */}
                 <div className={`text-center mb-10 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold text-msl-gold text-sm font-bold uppercase mb-6">
                         <Trophy size={14} /> Competition Tracks
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+                    <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
                         A Path for
                         <span className="gradient-text-gold"> Everyone</span>
                     </h2>
@@ -58,7 +58,7 @@ const CompetitionsSlide: React.FC<SlideProps> = ({ isActive }) => {
                 <div className={`transition-all duration-500 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {activeTrack === 'staff' ? (
                         /* Staff Track - Activations & Leaderboard */
-                        <div className="grid md:grid-cols-2 gap-6 min-h-[460px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[auto] md:min-h-[460px]">
                             {/* Brand Activations */}
                             <div className="bg-msl-card border border-orange-500/20 rounded-3xl p-8 relative overflow-hidden group hover:border-orange-500/40 transition-all h-full">
                                 <div className="absolute top-0 left-0 right-0 h-1 bg-orange-500" />
@@ -148,7 +148,7 @@ const CompetitionsSlide: React.FC<SlideProps> = ({ isActive }) => {
                         </div>
                     ) : (
                         /* Players Track - Tournaments */
-                        <div className="grid md:grid-cols-2 gap-6 min-h-[460px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[auto] md:min-h-[460px]">
                             {/* Campus Tournaments */}
                             <div className="bg-msl-card border border-msl-gold/20 rounded-3xl p-8 relative overflow-hidden group hover:border-msl-gold/40 transition-all h-full">
                                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-500 to-orange-400" />

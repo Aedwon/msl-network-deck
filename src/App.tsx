@@ -123,10 +123,10 @@ function App() {
     const CurrentSlideComponent = SLIDES[currentSlide].component;
 
     return (
-        <div className="relative w-full h-full bg-msl-black overflow-hidden">
+        <div className="relative w-full h-full bg-msl-black overflow-y-auto md:overflow-hidden">
             {/* Slide Container */}
             <div
-                className={`w-full h-full transition-all duration-500 ease-out ${isTransitioning
+                className={`w-full min-h-full md:h-full transition-all duration-500 ease-out ${isTransitioning
                     ? direction === 'next'
                         ? 'opacity-0 translate-x-[-30px] scale-[0.98]'
                         : 'opacity-0 translate-x-[30px] scale-[0.98]'

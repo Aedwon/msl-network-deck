@@ -118,10 +118,10 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
             </div>
             <div className="absolute inset-0 bg-grid-pattern opacity-20" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-                <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full pt-16 md:pt-0 pb-32 md:pb-0">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     {/* Left - Tier Ladder */}
-                    <div className="lg:col-span-4 flex flex-col items-center lg:items-end gap-12 relative min-h-[500px] justify-start pt-10">
+                    <div className="lg:col-span-4 flex flex-row lg:flex-col items-center justify-center lg:items-end gap-4 lg:gap-12 relative min-h-[auto] lg:min-h-[500px] lg:justify-start lg:pt-10">
                         {/* Header */}
                         <div className={`text-center lg:text-right transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <h2 className="text-3xl font-black text-white mb-2">The Ascension</h2>
@@ -131,11 +131,11 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                         {/* Tier Nodes Container */}
                         <div className="flex lg:flex-col-reverse gap-4 lg:gap-8 relative items-center">
                             {/* Connecting Line - Fixed to reach centers */}
-                            <div className="absolute left-7 lg:left-auto lg:right-10 top-1/2 lg:top-4 lg:bottom-4 h-1 lg:h-auto w-[calc(100%-56px)] lg:w-1 bg-gray-800 -translate-y-1/2 lg:translate-y-0 rounded-full overflow-hidden">
+                            <div className="absolute left-0 right-0 top-1/2 lg:left-auto lg:right-10 lg:top-4 lg:bottom-4 h-1 lg:h-auto w-full lg:w-1 bg-gray-800 -translate-y-1/2 lg:translate-y-0 rounded-full overflow-hidden -z-10">
                                 <div
-                                    className="absolute left-0 lg:left-0 bottom-0 lg:bottom-0 h-full lg:h-auto w-0 lg:w-full bg-gradient-to-r lg:bg-gradient-to-t from-blue-600 via-purple-500 to-msl-gold transition-all duration-700"
+                                    className="absolute left-0 lg:left-0 bottom-0 lg:bottom-0 h-full lg:h-auto w-full lg:w-full bg-gradient-to-r lg:bg-gradient-to-t from-blue-600 via-purple-500 to-msl-gold transition-all duration-700 origin-left lg:origin-bottom"
                                     style={{
-                                        height: `${(TIERS.findIndex(t => t.id === activeTier.id) / (TIERS.length - 1)) * 100}%`
+                                        transform: `scale${window.innerWidth >= 1024 ? 'Y' : 'X'}(${TIERS.findIndex(t => t.id === activeTier.id) / (TIERS.length - 1)})`
                                     }}
                                 />
                             </div>
@@ -158,7 +158,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                                         </span>
 
                                         {/* Node */}
-                                        <div className={`w-14 h-14 lg:w-20 lg:h-20 rounded-full border-4 flex items-center justify-center transition-all duration-500 bg-msl-black relative ${isSelected
+                                        <div className={`w-12 h-12 lg:w-20 lg:h-20 rounded-full border-4 flex items-center justify-center transition-all duration-500 bg-msl-black relative ${isSelected
                                             ? `${tier.borderColor} shadow-[0_0_30px_-5px_currentColor] scale-110`
                                             : isPassed ? 'border-gray-700 text-gray-500 shadow-[0_0_15px_-5px_rgba(255,255,255,0.1)]' : 'border-gray-800 text-gray-700 hover:border-gray-600 hover:text-gray-500 hover:scale-105'
                                             } ${isSelected ? tier.color : ''}`}>
@@ -185,7 +185,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
 
                     {/* Right - Tier Details */}
                     <div className="lg:col-span-8">
-                        <div className={`bg-msl-card border rounded-3xl p-8 transition-all duration-500 ${getCardGlow()} ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                        <div className={`bg-msl-card border rounded-3xl p-6 md:p-8 transition-all duration-500 ${getCardGlow()} ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                             }`}>
                             {/* Header Bar */}
                             <div className={`h-1 w-full rounded-full mb-8 ${activeTier.color.replace('text-', 'bg-')}`} />
@@ -193,7 +193,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                             {/* Tier Identity */}
                             <div className="flex items-center justify-between mb-8">
                                 <div>
-                                    <h3 className={`text-4xl md:text-5xl font-black ${activeTier.isSpecial ? 'gradient-text-gold' : 'text-white'}`}>
+                                    <h3 className={`text-3xl md:text-5xl font-black ${activeTier.isSpecial ? 'gradient-text-gold' : 'text-white'}`}>
                                         {activeTier.name}
                                     </h3>
                                 </div>
@@ -207,7 +207,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 <div className="flex items-center justify-between">
                                     <div>
                                         <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Max Diamonds Allocation</p>
-                                        <p className="text-4xl md:text-5xl font-black text-white">{activeTier.diamonds}</p>
+                                        <p className="text-3xl md:text-5xl font-black text-white">{activeTier.diamonds}</p>
                                         <p className="text-sm text-gray-600 mt-1">per semester</p>
                                     </div>
                                     {/* Fixed: Use consistent text-blue-400 for Diamond icon */}
@@ -218,7 +218,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                             {/* Requirements & Perks Grid */}
                             <div className="grid gap-6">
                                 {/* Requirements */}
-                                <div className="grid grid-cols-3 gap-2 bg-black/20 rounded-xl p-6">
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 bg-black/20 rounded-xl p-4 md:p-6">
                                     <div className="text-center">
                                         <p className="text-xs text-gray-500 uppercase mb-2">Members</p>
                                         <p className="text-3xl font-bold text-white">{activeTier.reqs.members}</p>
@@ -234,7 +234,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                                 </div>
 
                                 {/* Perks */}
-                                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                     <div className="bg-white/5 rounded-xl p-4">
                                         <p className="text-xs text-gray-500 uppercase mb-2">Activations</p>
                                         <div className="flex items-center gap-2">

@@ -48,11 +48,11 @@ const ProblemSlide: React.FC<SlideProps> = ({ isActive }) => {
 
             <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
                 {/* Section Header */}
-                <div className={`text-center mb-12 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-bold uppercase mb-6">
+                <div className={`text-center mb-8 md:mb-12 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-bold uppercase mb-4 md:mb-6">
                         <AlertTriangle size={14} /> Reality Check
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-black text-white mb-4">
                         Sound
                         <span className="text-red-400"> Familiar?</span>
                     </h2>
@@ -62,7 +62,7 @@ const ProblemSlide: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
 
                 {/* Pain Points Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {PAIN_POINTS.map((point, index) => (
                         <div
                             key={point.title}

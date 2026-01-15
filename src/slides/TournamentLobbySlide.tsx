@@ -20,8 +20,8 @@ const TournamentLobbySlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob ambient-blob-purple w-[500px] h-[500px] top-[30%] right-[10%]" />
             <div className="absolute inset-0 bg-dot-pattern opacity-20" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full pt-10 md:pt-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                     {/* Left - Content */}
                     <div>
                         {/* Badge */}
@@ -30,7 +30,7 @@ const TournamentLobbySlide: React.FC<SlideProps> = ({ isActive }) => {
                         </div>
 
                         {/* Title */}
-                        <h2 className={`text-4xl md:text-5xl font-black text-white mb-6 leading-tight transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                        <h2 className={`text-3xl md:text-5xl font-black text-white mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             Access the
                             <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Tournament Lobby</span>
@@ -55,7 +55,7 @@ const TournamentLobbySlide: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
 
                     {/* Right - Visual */}
-                    <div className={`relative transition-all duration-1000 delay-200 ${isActive ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`relative transition-all duration-1000 delay-200 hidden md:block ${isActive ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         {/* Glow */}
                         <div className="absolute inset-0 bg-purple-500/20 rounded-3xl blur-[80px] animate-pulse" />
 

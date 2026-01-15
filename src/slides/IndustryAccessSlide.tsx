@@ -52,7 +52,7 @@ const IndustryAccessSlide: React.FC<SlideProps> = ({ isActive }) => {
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-msl-gold/10 border border-msl-gold/20 text-msl-gold text-sm font-bold uppercase mb-6">
                         <Trophy size={14} /> Student Development
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
+                    <h2 className="text-3xl md:text-6xl font-black text-white mb-4">
                         Professionalizing
                         <br />
                         <span className="gradient-text-gold">Student Orgs</span>
@@ -65,9 +65,9 @@ const IndustryAccessSlide: React.FC<SlideProps> = ({ isActive }) => {
                 {/* Pipeline Visualization */}
                 <div className="relative mb-24">
                     {/* Connecting Line */}
-                    <div className={`absolute top-[40px] left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-1000 delay-300 ${isActive ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'}`} />
+                    <div className={`hidden md:block absolute top-[40px] left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-1000 delay-300 ${isActive ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'}`} />
 
-                    <div className="grid md:grid-cols-3 gap-12 relative">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative pb-32 md:pb-0">
                         {OPPORTUNITIES.map((opp, index) => (
                             <div
                                 key={opp.title}

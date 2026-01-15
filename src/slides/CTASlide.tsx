@@ -38,13 +38,13 @@ const CTASlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob ambient-blob-gold w-[800px] h-[800px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
             <div className="absolute inset-0 bg-grid-pattern opacity-30" />
 
-            <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center">
+            <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center pb-32 md:pb-0">
                 {/* Header */}
                 <div className={`mb-12 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold text-msl-gold text-sm font-bold uppercase mb-6 animate-pulse-glow">
                         <Rocket size={14} /> Join The Network
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-black text-white mb-6">
+                    <h2 className="text-4xl md:text-7xl font-black text-white mb-6">
                         Build Your
                         <br />
                         <span className="gradient-text-gold text-glow-gold">Legacy</span>
@@ -82,7 +82,7 @@ const CTASlide: React.FC<SlideProps> = ({ isActive }) => {
 
                     <button
                         onClick={handleEmail}
-                        className="px-16 py-6 bg-msl-gold hover:bg-msl-goldHover text-black rounded-3xl font-black text-2xl transition-all shadow-[0_0_40px_rgba(242,194,26,0.4)] hover:shadow-[0_0_80px_rgba(242,194,26,0.6)] hover:scale-105 flex items-center justify-center gap-4 group w-full max-w-md"
+                        className="px-8 md:px-16 py-4 md:py-6 bg-msl-gold hover:bg-msl-goldHover text-black rounded-3xl font-black text-xl md:text-2xl transition-all shadow-[0_0_40px_rgba(242,194,26,0.4)] hover:shadow-[0_0_80px_rgba(242,194,26,0.6)] hover:scale-105 flex items-center justify-center gap-4 group w-full max-w-md"
                     >
                         Compose Email
                         <ArrowRight size={28} className="group-hover:translate-x-1 transition-transform" />

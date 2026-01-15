@@ -40,8 +40,8 @@ const NetworkIntroSlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob ambient-blob-gold w-[700px] h-[700px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
             <div className="absolute inset-0 bg-grid-pattern opacity-20" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full pt-10 md:pt-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                     {/* Left Content */}
                     <div>
                         {/* Badge */}
@@ -50,7 +50,7 @@ const NetworkIntroSlide: React.FC<SlideProps> = ({ isActive }) => {
                         </div>
 
                         {/* Title */}
-                        <h2 className={`text-4xl md:text-5xl font-black text-white mb-6 leading-tight transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                        <h2 className={`text-3xl md:text-5xl font-black text-white mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             Introducing
                             <br />
                             <span className="gradient-text-gold">The MSL Network</span>
@@ -86,7 +86,7 @@ const NetworkIntroSlide: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
 
                     {/* Right Visual - Network Graph */}
-                    <div className={`relative h-[500px] transition-all duration-1000 delay-200 ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+                    <div className={`relative h-[300px] md:h-[500px] transition-all duration-1000 delay-200 hidden md:block ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
                         {/* Connection Lines - Behind everything */}
                         <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
                             <defs>

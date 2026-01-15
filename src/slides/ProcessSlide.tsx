@@ -19,13 +19,13 @@ const ProcessSlide: React.FC<SlideProps> = ({ isActive }) => {
             <div className="ambient-blob ambient-blob-gold w-[800px] h-[800px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50" />
             <div className="absolute inset-0 bg-grid-pattern opacity-30" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center pb-32 md:pb-0">
                 {/* Header */}
                 <div className={`mb-16 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold text-msl-gold text-sm font-bold uppercase mb-6">
                         <Gamepad2 size={14} /> Application Process
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-black text-white mb-4">
+                    <h2 className="text-4xl md:text-7xl font-black text-white mb-4">
                         Ready to
                         <br />
                         <span className="gradient-text-gold">Press Start?</span>
@@ -33,7 +33,7 @@ const ProcessSlide: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
 
                 {/* Steps */}
-                <div className={`flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                <div className={`flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16 transition-all duration-700 delay-200 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     {STEPS.map((step, index) => (
                         <React.Fragment key={step.num}>
                             <div className="flex flex-col items-center group">

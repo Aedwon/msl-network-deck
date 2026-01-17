@@ -89,7 +89,7 @@ const CTASlide: React.FC<SlideProps> = ({ isActive }) => {
                     </button>
 
                     <p className="text-xs text-gray-500 italic max-w-md">
-                        *Selecting your region ensures your application reaches the correct department immediately.
+                        *Selecting your region ensures your application reaches the correct Regional Officer immediately.
                     </p>
                 </div>
 

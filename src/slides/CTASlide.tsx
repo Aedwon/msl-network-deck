@@ -82,7 +82,7 @@ const CTASlide: React.FC<SlideProps> = ({ isActive }) => {
 
                     <button
                         onClick={handleEmail}
-                        className="px-8 md:px-16 py-4 md:py-6 bg-msl-gold hover:bg-msl-goldHover text-black rounded-3xl font-black text-xl md:text-2xl transition-all shadow-[0_0_40px_rgba(242,194,26,0.4)] hover:shadow-[0_0_80px_rgba(242,194,26,0.6)] hover:scale-105 flex items-center justify-center gap-4 group w-full max-w-md"
+                        className="px-8 md:px-16 py-4 md:py-6 bg-msl-gold hover:bg-msl-goldHover text-black rounded-3xl font-black text-xl md:text-2xl transition-all hover:scale-105 flex items-center justify-center gap-4 group w-full max-w-md"
                     >
                         Compose Email
                         <ArrowRight size={28} className="group-hover:translate-x-1 transition-transform" />

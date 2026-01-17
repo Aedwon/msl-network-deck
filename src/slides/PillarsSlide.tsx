@@ -5,39 +5,39 @@ interface SlideProps {
     isActive: boolean;
 }
 
-// Photo sets for each pillar - using placeholder URLs (replace with real MSL photos)
+// Photo sets for each pillar - upload your images to public/slides/slide4/{folder}/
+// Each folder has 5 image slots: 1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg
+// Layout positions:
+//   1 (top-left, large)  |  2 (top-right)
+//   3 (bottom-left)  |  4 (bottom-center)  |  5 (bottom-right)
 const PHOTO_SETS = {
     fuel: [
-        'https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1493711662062-fa541f7f7b65?w=600&h=400&fit=crop',
+        '/slides/slide4/fuel/1.webp',
+        '/slides/slide4/fuel/2.webp',
+        '/slides/slide4/fuel/3.webp',
+        '/slides/slide4/fuel/4.webp',
+        '/slides/slide4/fuel/5.webp',
     ],
     connections: [
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&h=400&fit=crop',
+        '/slides/slide4/connections/1.webp',
+        '/slides/slide4/connections/2.webp',
+        '/slides/slide4/connections/3.webp',
+        '/slides/slide4/connections/4.webp',
+        '/slides/slide4/connections/5.webp',
     ],
     industry: [
-        'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?w=600&h=400&fit=crop',
+        '/slides/slide4/industry-opportunities/1.webp',
+        '/slides/slide4/industry-opportunities/2.webp',
+        '/slides/slide4/industry-opportunities/3.webp',
+        '/slides/slide4/industry-opportunities/4.webp',
+        '/slides/slide4/industry-opportunities/5.webp',
     ],
     competitions: [
-        'https://images.unsplash.com/photo-1542751110-97427bbecf20?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1493711662062-fa541f7f7b65?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=600&h=400&fit=crop',
+        '/slides/slide4/competitions/1.webp',
+        '/slides/slide4/competitions/2.webp',
+        '/slides/slide4/competitions/3.webp',
+        '/slides/slide4/competitions/4.webp',
+        '/slides/slide4/competitions/5.webp',
     ],
 };
 

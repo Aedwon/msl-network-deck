@@ -38,10 +38,10 @@ const SuccessStoriesSlide: React.FC<SlideProps> = ({ isActive }) => {
                         {/* Facebook Posts Carousel */}
                         <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory" style={{ scrollbarWidth: 'none' }}>
                             {/* Post 1 - PNU Sulo */}
-                            <div className="rounded-xl overflow-hidden bg-white shrink-0 snap-center w-[300px] md:w-[380px]">
+                            <div className="rounded-xl overflow-hidden bg-white shrink-0 snap-center w-[350px] md:w-[450px]">
                                 <iframe
                                     src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpnusulo%2Fposts%2Fpfbid032Vs3VLLtNQqYioXCfnvnjhiputnVN1ufPhEgBXcZjBfXFaKEQk9mvCMMS9ZBv81hl&show_text=true&width=500"
-                                    className="w-full h-[520px]"
+                                    className="w-full h-[600px]"
                                     style={{ border: 'none', overflow: 'hidden' }}
                                     scrolling="no"
                                     frameBorder="0"
@@ -52,10 +52,10 @@ const SuccessStoriesSlide: React.FC<SlideProps> = ({ isActive }) => {
                             </div>
 
                             {/* Post 2 - Ellwithana */}
-                            <div className="rounded-xl overflow-hidden bg-white shrink-0 snap-center w-[300px] md:w-[380px]">
+                            <div className="rounded-xl overflow-hidden bg-white shrink-0 snap-center w-[350px] md:w-[450px]">
                                 <iframe
                                     src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fellwithana%2Fposts%2Fpfbid0henFuHjub7vsnv5EG4Jpc5LBV7RNnWn1rw1xjrpwTbTzYiXrQYpXAR5QMHx9HaAFl&show_text=true&width=500"
-                                    className="w-full h-[520px]"
+                                    className="w-full h-[600px]"
                                     style={{ border: 'none', overflow: 'hidden' }}
                                     scrolling="no"
                                     frameBorder="0"
@@ -66,10 +66,10 @@ const SuccessStoriesSlide: React.FC<SlideProps> = ({ isActive }) => {
                             </div>
 
                             {/* Post 3 - Kudos Vernick */}
-                            <div className="rounded-xl overflow-hidden bg-white shrink-0 snap-center w-[300px] md:w-[380px]">
+                            <div className="rounded-xl overflow-hidden bg-white shrink-0 snap-center w-[350px] md:w-[450px]">
                                 <iframe
                                     src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkudosvernick%2Fposts%2Fpfbid05ftHtWWZNkfPZng7Mq3jmDCJbKnmajYuep97sdwoCUvEq98CKKn129kD4Fg1LkCNl&show_text=true&width=500"
-                                    className="w-full h-[520px]"
+                                    className="w-full h-[600px]"
                                     style={{ border: 'none', overflow: 'hidden' }}
                                     scrolling="no"
                                     frameBorder="0"

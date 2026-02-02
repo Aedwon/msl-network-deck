@@ -243,7 +243,7 @@ const TiersSlide: React.FC<SlideProps> = ({ isActive }) => {
                                         </div>
                                     </div>
                                     <div className="bg-white/5 rounded-xl p-4">
-                                        <p className="text-xs text-gray-500 uppercase mb-2">Creative</p>
+                                        <p className="text-xs text-gray-500 uppercase mb-2">Creative Growth</p>
                                         <div className="flex items-center gap-2">
                                             <div className={`w-2 h-2 rounded-full ${activeTier.perks.creative.includes('Full') ? 'bg-green-500' : 'bg-blue-500'}`} />
                                             <span className="font-bold text-base text-white">{activeTier.perks.creative}</span>
